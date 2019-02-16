@@ -1,0 +1,11 @@
+inline unsigned int LLIntegerLog2(unsigned int v);
+inline unsigned LLRevBits(unsigned int x, unsigned int bits);
+void LLraisedCosTbl(double *dst, int n, int windowSizePadded, int overlapCount);
+void LLsinHalfTbl(double *dst, int n);
+void LLbitReversalTbl(unsigned *dst, int n);
+void LLCreatePostWindow(double *dst, int windowSize, int windowSizePadded, int overlapCount);
+void LLraisedCosTblFloat(float *dst, int n, int windowSizePadded, int overlapCount);
+void LLsinHalfTblFloat(float *dst, int n);
+void LLCreatePostWindowFloat(float *dst, int windowSize, int windowSizePadded, int overlapCount);
+void LLdiscreteHartleyFloat(float *A, const int nPoints, const float *sinTab);
+void LLdiscreteHartley(double *A, const int nPoints, const double *sinTab);
