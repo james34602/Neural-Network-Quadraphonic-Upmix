@@ -60,7 +60,7 @@ The neural network upmix cannot surpass author involved state-of-the-art upmix a
 ![Signal to distortion ratio](./SDR.svg)
 
 ## What's difference between neural network prior art[1] and this method?
-No contextual information used in my implementation, may lead to higher artefacts(Musical noise) in **NN2** output, parameters are adjusted to fit my datasets. But however, no context frame == lower latency, <21.4 ms was achieved.
+No contextual information used in my implementation, may lead to higher artefacts(Musical noise) in **NN2** output, parameters are adjusted to fit my datasets. But however, no context frame == lower latency, <21.34 ms was achieved.
 
 ## Reference
 [1] Ibrahim, Karim & Allam, Mahmoud. (2018). Primary-Ambient Source Separation for Upmixing to Surround Sound Systems. 10.1109/ICASSP.2018.8461459.
