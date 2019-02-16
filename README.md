@@ -50,7 +50,7 @@ The neural network upmix cannot surpass author involved state-of-the-art upmix a
 
 ![Signal to distortion ratio](./SDR.svg)
 
-## What's difference between neural network prior art[1]?
+## What's difference between neural network prior art[1] and this method?
 No contextual information used in my implementation, and parameters are adjusted to fit my dataset, may lead to higher artefacts(Musical noise) in *NN2* output, but however, no context frame == lower latency, <21.4 ms was achieved.
 
 ## Reference
