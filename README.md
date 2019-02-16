@@ -27,7 +27,7 @@ Input vector **NN2**:
 ![FV2](./PrimaryAmbientClassifier2/equation2.svg)
 
 ## Analysis
-* Extra hidden layer was added to **NN1**, which avoid model underfitting, also, lead author assume the first layer act as a feature extractor, we have no actual proof that the model is using it's first layer as I intend.
+* Extra hidden layer was added to **NN1**, which avoid model underfitting, also, lead author assume the first layer act as a feature extractor, we have no actual proof that the network is using it's first layer as I intend.
 * Experiments shown last hidden layer control the transition of stereo audio panning mask function.
 
 Among end-to-end learning characteristics are:
