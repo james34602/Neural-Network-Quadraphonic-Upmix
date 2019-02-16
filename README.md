@@ -33,18 +33,26 @@ Input vector **NN2**:
 
 Among end-to-end learning characteristics are:
 
-* Straightforward
-* CPU intense, offen require more network parameters
+* Straightforward.
+* CPU intense, offen require more network parameters to fit the data.
 * Model are prone to underfit if bad training data were used.
 
 Compare with **James Fung & Joseph Young 2017** algorithm:
 
 * Neural network implementation doesn't require substantial knowledge of stereo signal model, it is data-driven.
 * Extend to N-channels upmix is somehow not easy for neural network, labelling directional sound components isn't that simple.
+* **James Fung & Joseph Young 2017** is angle directional based, which allow arbitrary sound source blending with just stereo input.
 * Matrix multiplication isn't that fast, suppose we need to run upmixer on hardware.
+* Perfect reconstruction downmix were both available, but **James Fung & Joseph Young 2017** allow spatial enhancement mode might suit for varies applications.
+
+Major advantages of neural network upmix:
+
+* Simple
+* Most panning technique used in studio can be successfully demixed, including amplitude pan, in/out of phase panning, or complicated audio scene like reverb. Some prior arts can only demix some of panning technique, which is very insufficient for current commercial music recordings.
+* Perfect reconstruction downmix
 
 ## Upmixers benchmark
-#### Objective: Given p1(n) p2(n) p3(n) is mixed into stereo signal [x1(n) x2(n)], demix p1(n) p2(n) p3(n) from [x1(n) x2(n)]
+#### Objective: Given p1(n) p2(n) p3(n) are mixed into stereo signal [x1(n) x2(n)], demix p1(n) p2(n) p3(n) from [x1(n) x2(n)]
 
 ### Compare with ground truth signals similarity
 The neural network upmix cannot surpass author involved state-of-the-art upmix algorithm, but still producing quite decent result, especially for **NN2**.
