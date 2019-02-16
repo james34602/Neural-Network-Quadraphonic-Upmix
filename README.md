@@ -54,7 +54,7 @@ Major advantages of neural network upmix:
 ## Upmixers benchmark
 #### Objective: Given p1(n) p2(n) p3(n) are mixed into stereo signal [x1(n) x2(n)], demix p1(n) p2(n) p3(n) from [x1(n) x2(n)]
 
-### Compare with ground truth signals similarity
+### Compare signal similarity to ground truth signals
 The neural network upmix cannot surpass author involved state-of-the-art upmix algorithm, but still producing quite decent result, especially for **NN2**.
 
 ![Signal to distortion ratio](./SDR.svg)
