@@ -43,7 +43,7 @@ Compare with **James Fung & Joseph Young 2017** algorithm:
 * Extend to N-channels upmix is somehow not easy for neural network, labelling directional sound components isn't that simple.
 * **James Fung & Joseph Young 2017** is angle directional based, which allow arbitrary sound source blending with just stereo input.
 * Matrix multiplication isn't that fast, suppose we need to run upmixer on hardware.
-* Perfect reconstruction downmix were both available, but **James Fung & Joseph Young 2017** allow spatial enhancement mode might suit for varies applications.
+* Perfect reconstruction downmix were both available, but **James Fung & Joseph Young 2017** provide extra spatial enhancement mode, might suit for varies applications.
 
 Major advantages of neural network upmix:
 
