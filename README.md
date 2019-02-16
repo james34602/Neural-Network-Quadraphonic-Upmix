@@ -5,7 +5,8 @@ Neural network approach to stereo audio content upmix is extremely simple given 
 
 ## Method & Implementation
 
-Stereo upmix is a process to demix directional components from 2 channels mixture.
+Stereo upmix is a process to demix directional components from 2 channels mixture. The neural network are operated on Short-time Fourier transform bins.
+
 Author had conduct two test with different number of neurons = [4,16,8,5,3,1] and [2,8,5,3,1] respectively, network parameters of the network were chosen empirically, all layers use ReLU as activation function.
 
 ### NN1
@@ -51,7 +52,7 @@ The neural network upmix cannot surpass author involved state-of-the-art upmix a
 ![Signal to distortion ratio](./SDR.svg)
 
 ## What's difference between neural network prior art[1] and this method?
-No contextual information used in my implementation, and parameters are adjusted to fit my dataset, may lead to higher artefacts(Musical noise) in **NN2** output, but however, no context frame == lower latency, <21.4 ms was achieved.
+No contextual information used in my implementation, may lead to higher artefacts(Musical noise) in **NN2** output, parameters are adjusted to fit my datasets. But however, no context frame == lower latency, <21.4 ms was achieved.
 
 ## Reference
 [1] Ibrahim, Karim & Allam, Mahmoud. (2018). Primary-Ambient Source Separation for Upmixing to Surround Sound Systems. 10.1109/ICASSP.2018.8461459.
