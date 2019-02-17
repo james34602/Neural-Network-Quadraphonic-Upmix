@@ -59,6 +59,11 @@ The neural network upmix cannot surpass author involved state-of-the-art upmix a
 
 ![Signal to distortion ratio](./SDR.svg)
 
+## Training
+Real life audio data was used in neural network training, including, but not limited to, studio recordings, artifical sound at reverberant environment.
+
+However, not all microphone and ADC records full hearing range, even 18k cut-off is considered to contaminate my training data, so, training data will be collected from < 15.5 kHz which is about the same as 128 kbps MP3 cut-off point.
+
 ## What's difference between neural network prior art[1] and this method?
 No contextual information used in my implementation, may lead to higher artefacts(Musical noise) in **NN2** output, parameters are adjusted to fit my datasets. But however, no context frame == lower latency, <21.34 ms was achieved.
 
