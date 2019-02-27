@@ -48,7 +48,7 @@ Compare with **James Fung & Joseph Young 2017** algorithm:
 Major advantages of neural network upmix:
 
 * Simple
-* Most panning technique used in studio can be successfully demixed, including amplitude pan, in/out of phase panning, or complicated audio scene like reverb. Some prior arts can only demix some of panning technique, which is very insufficient for current commercial music recordings.
+* Most panning technique used in studio can be successfully demixed, including amplitude pan, in/out of phase panning, or complicated audio scene like reverb. Some prior arts can only demix a portion of stereo panning techniques, which is very insufficient for current commercial music recordings.
 * Perfect reconstruction downmix
 
 ## Upmixers benchmark
