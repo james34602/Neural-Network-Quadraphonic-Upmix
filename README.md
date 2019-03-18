@@ -37,13 +37,13 @@ Among end-to-end learning characteristics are:
 * CPU intense, offen require more network parameters to fit the data.
 * Models are prone to underfit if bad training data were used.
 
-Compare with **James Fung & Joseph Young 2017** algorithm:
+Compare with **James Fung & Joseph Yeung 2017** algorithm:
 
 * Neural network implementation doesn't require substantial knowledge of stereo signal model, it is data-driven.
 * Extend to N-channels upmix is somehow not easy for neural network, labelling directional sound components isn't that simple.
-* **James Fung & Joseph Young 2017** is angle directional based, which allow arbitrary sound source blending with just stereo input.
+* **James Fung & Joseph Yeung 2017** is angle directional based, which allow arbitrary sound source blending with just stereo input.
 * Matrix multiplication isn't that fast, suppose we need to run upmixer on hardware.
-* Perfect reconstruction downmix were both available, but **James Fung & Joseph Young 2017** provide extra spatial enhancement mode, might suit for varies applications.
+* Perfect reconstruction downmix were both available, but **James Fung & Joseph Yeung 2017** provide extra spatial enhancement mode, might suit for varies applications.
 
 Major advantages of neural network upmix:
 
