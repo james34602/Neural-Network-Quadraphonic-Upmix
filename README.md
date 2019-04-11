@@ -39,15 +39,13 @@ Among end-to-end learning characteristics are:
 
 Compare with **James Fung & Joseph Yeung 2017** algorithm:
 
-* Neural network implementation doesn't require substantial knowledge of stereo signal model, it is data-driven.
-* Extend to N-channels upmix is somehow not easy for neural network, labelling directional sound components isn't that simple.
-* **James Fung & Joseph Yeung 2017** is angle directional based, which allow arbitrary sound source blending with just stereo input.
-* Matrix multiplication isn't that fast, suppose we need to run upmixer on hardware.
+* Neural network implementation doesn't require substantial knowledge of stereo signal model.
 * Perfect reconstruction downmix were both available, but **James Fung & Joseph Yeung 2017** provide extra spatial enhancement mode, might suit for varies applications.
 
 Major advantages of neural network upmix:
 
 * Simple
+* Extendable to N-channels upmix, since stereo model have been learned in the training process, doesn't mean it capable only quadraphonic upmix.
 * Most panning technique used in studio can be successfully demixed, including amplitude pan, in/out of phase panning, or complicated audio scene like reverb. Some prior arts can only demix a portion of stereo panning techniques, which is very insufficient for current commercial music recordings.
 * Perfect reconstruction downmix
 
